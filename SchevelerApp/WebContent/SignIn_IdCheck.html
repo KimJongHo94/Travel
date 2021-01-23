@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SignIn_IdCheck.html</title>
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+  <link rel="stylesheet" type="text/css" href="css/SignIn_IdCheck.css">
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <!--아이콘 링크 -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+
+  //회원가입창의 아이디 입력란의 값을 가져온다.
+  function pValue() {
+    document.getElementById("id").value = opener.document.member_Form.value;
+  }
+
+	//여기서 비교(jsp파일일때 코드 쓰?)
+</script>
+
+<body onload="pValue()">
+  <div id="content" class="content">
+    <form name="idCheck_Form" method="">
+      <div class="member">
+        <div class="idCheck-form">
+
+
+          <span>사용가능한 아이디입니다.</span>
+          <br><br>
+          <input type="button" value="확인" class="idCheck-btn"></a>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  <!-- end content -->
